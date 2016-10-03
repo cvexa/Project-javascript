@@ -1,6 +1,17 @@
 <?php
 include_once("includes/header.html");
 ?>
+<div id="banner">
+		<div class="container">
+			<div class="title">
+				<h2>Chose what to do : </h2>
+				<!-- <span class="byline">Proin gravida porttitor accumsan</span>  --></div>
+			<ul class="actions">
+				<li><a href="encryption.php" class="button">Encryption</a></li>
+				<li><a href="#" class="button">Decryption</a></li>
+			</ul>
+		</div>
+	</div>
 	<div id="extra" class="container">
 		<div class="title">
 			<h2>Caesar cipher</h2>
@@ -36,7 +47,7 @@ include_once("includes/header.html");
                Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD </p>
 		</div>
 		<ul class="actions">
-			<li><a href="#" class="button">Try it !</a></li>
+			<li><a href="encryption.php" class="button">Try it !</a></li>
 		</ul>
 	</div>
 	<div id="page" class="container">
