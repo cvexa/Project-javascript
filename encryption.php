@@ -2,14 +2,14 @@
 include_once("includes/header.html");
 ?>
 
-<script src="js/test1.js"></script>
+
 	<div id="page" class="container">
 		<div class="title">
 			<h2>Encryption</h2>
 			<span class="byline">Enter some text to encrypt, and shift :</span> </div>
-			<p>Example: How are You today ? | 5 </p>
-		<p><form id="frm1" action="encryption.php" method="post">
-  <p>
+			<p id="ex">Example: How are You today ? | 5 </p>
+<!-- 		<p><form id="frm1" action="encryption.php" method="post">
+  <p> -->
   	<label for="text">
   		TEXT:
   	</label> 
@@ -21,20 +21,26 @@ include_once("includes/header.html");
  	</label> 
  	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number...">
  </p>
-  <span id="btn">
-  <input type="button" value="Submit" onclick="myFunction()" class="button">
+ 
+<!-- </form>  -->
+ <span id="btn">
+  <button id="btn_go" type="button" class="button">Submit</button>
 </span>
-</form> 
 </p>
 <p id = "final">
 	
 </p>
 <button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
-			
+<p>
+<button id="de" type = "button"  class = "button">DECRYPTION</button>
+</p>			
 		
 	</div>
 </div>
-	
+	<script src="js/enc.js"></script>
+<script>
+
+</script>
 <?php
 include_once("includes/footer.html");
 ?>
