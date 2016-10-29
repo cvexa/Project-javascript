@@ -9,15 +9,27 @@ include_once("includes/header.html");
 			<span class="byline">Enter some text to encrypt, and shift :</span> </div>
 			<p>Example: How are You today ? | 5 </p>
 		<p><form id="frm1" action="encryption.php" method="post">
-  <p>TEXT: <input id="text" type="text" name="text"></p>
- <p> SHIFT: <input id="shift"type="number" name="shift"></p>
-  
-  <input type="button" onclick="myFunction()" value="Submit" class="button">
-</form> </p>
+  <p>
+  	<label for="text">
+  		TEXT:
+  	</label> 
+  	<input id="text" type="text" name="text" placeholder="Enter some text...">
+  </p>
+ <p>
+ 	<label for="shift"> 
+ 		SHIFT:
+ 	</label> 
+ 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number...">
+ </p>
+  <span id="btn">
+  <input type="button" value="Submit" onclick="myFunction()" class="button">
+</span>
+</form> 
+</p>
 <p id = "final">
 	
 </p>
-<input type = "button" onclick = "refresh()" value="refresh" class = "button">
+<button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
 			
 		
 	</div>
