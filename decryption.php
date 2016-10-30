@@ -7,8 +7,8 @@ include_once("includes/header.html");
 	<div id="page" class="container">
 		<div class="title">
 			<h2>Encryption</h2>
-			<span class="byline">Enter some text to encrypt, and shift :</span> </div>
-			<p id="ex">Example: How are You today ? | 5 </p>
+			<span class="byline">Enter some text to decrypt, and shift :</span> </div>
+			<p id="ex">Example: Wqe das fgg  ? | 5 </p>
 <!-- 		<p><form id="frm1" action="encryption.php" method="post">
   <p> -->
   	<label for="text">
@@ -28,14 +28,12 @@ include_once("includes/header.html");
   <button id="btn_go" type="button" class="button">Submit</button>
 </span>
 </p>
-
 <p id = "final">
 	
 </p>
 <button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
 <p>
-
-<a href="decryprion.php"><button id="de" type = "button"  class = "button">DECRYPTION</button></a>
+<button id="de" type = "button"  class = "button">DECRYPTION</button>
 </p>			
 		
 	</div>

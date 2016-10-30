@@ -1,6 +1,44 @@
 <?php
 include_once("includes/header.html");
 ?>
+<script type="text/javascript">
+	$( document ).ready(
+	function start_flash(){
+	for (var i = 0; i < 500; i++) {
+		$("#logo").fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1000);
+	}
+}
+	// $( "#logo" ).onclick = function start_flash()
+);
+$("#logo").hover(function() {
+	$( "#logo" ).stop();
+	$( "#logo" ).clearQueue();
+	
+	$( "#logo" ).css("display","block");
+	$( "#logo" ).fadeIn(1000);
+});
+$("#logo").mouseout(function start_flash2() {
+	for (var i = 0; i < 500; i++) {
+		$("#logo").fadeIn(1000).fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1000);
+	}
+});
+
+	</script>
+	<script type="text/javascript">
+	
+	$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+</script>
 <div id="banner">
 		<div class="container">
 			<div class="title">
@@ -8,7 +46,7 @@ include_once("includes/header.html");
 				<!-- <span class="byline">Proin gravida porttitor accumsan</span>  --></div>
 			<ul class="actions">
 				<li><a href="encryption.php" class="button">Encryption</a></li>
-				<li><a href="#" class="button">Decryption</a></li>
+				<li><a href="decryption.php" class="button">Decryption</a></li>
 			</ul>
 		</div>
 	</div>
@@ -58,7 +96,7 @@ include_once("includes/header.html");
 		<p>Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW <br/>
 		   Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
 		<ul class="actions">
-			<li><a href="#" class="button">Try it !</a></li>
+			<li><a href="decryption.php" class="button">Try it !</a></li>
 		</ul>
 	</div>
 </div>
