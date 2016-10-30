@@ -552,5 +552,14 @@
     #final{
     	display:none;
     	border:2px solid;
+    	background-color: #fff;
+
     } 
+    #page{
+    	/*background-image: url(c.png);
+    	/*position:fixed;*/
+    	/*background-repeat: no-repeat;
+    	 background-attachment: fixed;
+         background-position: center; */
+    }
 

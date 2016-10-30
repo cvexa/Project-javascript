@@ -1,5 +1,46 @@
 var counter = 0;
 var counter2 = 0;
+ var taken_shift = localStorage.getItem('taken_shift');
+ var taken_text = localStorage.getItem('taken_text');
+ 
+
+ var remove  = taken_text.slice(2, -1);
+       
+
+  // console.log(remove);
+  // console.log(taken_shift);
+  var taken_number = taken_shift.match(/\d+/);
+  var taken_number2 = Number(taken_number);
+  // console.log(taken_number2);
+
+    //  // var finalvalue = parse(listvalues);
+    //  // console.log(listvalues);
+    //  var taken_shift = listvalues.match(/\d+/);
+    //  var taken2 = "";
+    //  var taken3 = "";
+    //  // var new1 = listvalues + taken3;
+    //  // console.log(listvalues.length);
+     
+    //   // var y = listvalues.join;
+    // var remove  = listvalues.slice(0, -1);
+    //    var lastFive = remove.substr(remove.length - 15);
+    //    // var remove = listvalues.substr(listvalues.length - 1);
+
+    //    // console.log(lastFive);
+       
+     
+     
+     
+    
+    //  // var newy = y.replace(","," ");
+    //  // console.log(newy);
+    //  var new2 = taken_shift + taken2;
+    //  var taken_number = parseInt(new2);
+    //  // console.log(taken_number);
+     var w = document.getElementById("text").value = remove;
+    var q = document.getElementById("shift").value = taken_number2;
+    // $("shift").attr("placeholder",taken_number);
+
 $("#btn_go").on("click",function() {
      // $('#final').html('<img src="img/a.gif" />');
 
@@ -48,7 +89,7 @@ counter2 = 0;
     result = String.fromCharCode(convert);
 	final += result;
     }else{
-	convert = parseC += parseB;
+	convert = parseC -= parseB;
 	result = String.fromCharCode(convert);
 	final += result;
 	// alert(result);
@@ -62,14 +103,10 @@ if (counter2 > 0) {
   
 }else{
 
-element = document.getElementById("final").innerHTML += "Encrypted text with "+ b + " shift :"+ final;
+element = document.getElementById("final").innerHTML += "Decrypted text with "+ b + " shift :"+ final;
 element2 = document.getElementById("final").style.color="#85c1a4";
-
-localStorage.setItem('taken_shift', JSON.stringify(b));
-localStorage.setItem('taken_text', JSON.stringify(final));
-
 $("#final").css("display","block");
- $("#page").css({"background-image":"url(css/cc.png)",
+ $("#page").css({"background-image":"url(css/c.png)",
        "background-repeat": "no-repeat",
        "background-attachment": "fixed",
        "background-position": "center",

@@ -6,7 +6,7 @@ include_once("includes/header.html");
 
 	<div id="page" class="container">
 		<div class="title">
-			<h2>Encryption</h2>
+			<h2>Decryption</h2>
 			<span class="byline">Enter some text to decrypt, and shift :</span> </div>
 			<p id="ex">Example: Wqe das fgg  ? | 5 </p>
 <!-- 		<p><form id="frm1" action="encryption.php" method="post">
@@ -20,7 +20,7 @@ include_once("includes/header.html");
  	<label for="shift"> 
  		SHIFT:
  	</label> 
- 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number...">
+ 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number..." max="30">
  </p>
  
 <!-- </form>  -->
@@ -38,9 +38,14 @@ include_once("includes/header.html");
 		
 	</div>
 </div>
-	<script src="js/enc.js"></script>
+	<script src="js/de.js"></script>
 <script>
-
+ $("#page").css({
+       "background-image":"url(css/cc.png)",
+       "background-repeat": "no-repeat",
+       "background-attachment": "fixed",
+       "background-position": "center",
+        });
 </script>
 <?php
 include_once("includes/footer.html");

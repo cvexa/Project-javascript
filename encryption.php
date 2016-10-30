@@ -20,7 +20,7 @@ include_once("includes/header.html");
  	<label for="shift"> 
  		SHIFT:
  	</label> 
- 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number...">
+ 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number..." max="29" maxlength="2">
  </p>
  
 <!-- </form>  -->
@@ -35,14 +35,19 @@ include_once("includes/header.html");
 <button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
 <p>
 
-<a href="decryprion.php"><button id="de" type = "button"  class = "button">DECRYPTION</button></a>
+<a href="decryption.php"><button id="de" type = "button"  class = "button">DECRYPTION</button></a>
 </p>			
 		
 	</div>
 </div>
 	<script src="js/enc.js"></script>
 <script>
-
+ $("#page").css({
+       "background-image":"url(css/c.png)",
+       "background-repeat": "no-repeat",
+       "background-attachment": "fixed",
+       "background-position": "center",
+        });
 </script>
 <?php
 include_once("includes/footer.html");
