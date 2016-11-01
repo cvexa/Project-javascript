@@ -1,6 +1,13 @@
 1 : find template +
 2 : install template + 
-3 : create caesar cipher algorithm
-4 : install in template 
-5 : testing
-6 : testing 2 + protecting
+3 : create caesar cipher algorithm + 
+4 : install in template +
+5 : testing +
+6 : testing 2 + protecting + 
+7 : visiual efects 
+
+
+
+PROOF:
+
+https://www.nayuki.io/page/caesar-cipher-javascript 
