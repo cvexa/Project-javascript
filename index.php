@@ -46,7 +46,7 @@ $("#logo").mouseout(function start_flash2() {
 				<!-- <span class="byline">Proin gravida porttitor accumsan</span>  --></div>
 			<ul class="actions">
 				<li><a href="encryption.php" class="button">Encryption</a></li>
-				<li><a href="decryption.php" class="button">Decryption</a></li>
+				<li><a href="decryption_empty.php" class="button">Decryption</a></li>
 			</ul>
 		</div>
 	</div>
@@ -71,9 +71,9 @@ $("#logo").mouseout(function start_flash2() {
 				</div>
 			</div>
 		</div>
-		<ul class="actions">
-			<li><a href="https://en.wikipedia.org/wiki/Caesar_cipher" class="button">Read More</a></li>
-		</ul>
+	<!-- 	<ul class="actions"> -->
+			<!-- <li> --><a id="about_btn" href="https://en.wikipedia.org/wiki/Caesar_cipher" class="button">Read More</a><!-- </li>
+ -->	<!-- 	</ul> -->
 	</div>
 	<div id="featured">
 		<div class="container">
@@ -96,10 +96,11 @@ $("#logo").mouseout(function start_flash2() {
 		<p>Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW <br/>
 		   Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
 		<ul class="actions">
-			<li><a href="decryption.php" class="button">Try it !</a></li>
+			<li><a href="decryption_empty.php" class="button">Try it !</a></li>
 		</ul>
 	</div>
 </div>
+<script type="text/javascript" src="js/main.js"></script>
 <?php
 include_once("includes/footer.html");
 ?>

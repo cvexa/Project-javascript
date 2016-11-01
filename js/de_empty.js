@@ -1,6 +1,3 @@
-var counter = 0;
-var counter2 = 0;
-$("#de").css('display','none');
 $("#btn_go").on("click",function() {
      // $('#final').html('<img src="img/a.gif" />');
 
@@ -49,7 +46,7 @@ counter2 = 0;
     result = String.fromCharCode(convert);
 	final += result;
     }else{
-	convert = parseC += parseB;
+	convert = parseC -= parseB;
 	result = String.fromCharCode(convert);
 	final += result;
 	// alert(result);
@@ -62,14 +59,11 @@ if (counter2 > 0) {
 
   
 }else{
-$("#de").css('display','inline-block');
-element = document.getElementById("final").innerHTML += "Encrypted text with "+ b + " shift :"+ final;
+
+element = document.getElementById("final").innerHTML += "Decrypted text with "+ b + " shift :"+ final;
 element2 = document.getElementById("final").style.color="#85c1a4";
-
-
-
 $("#final").css("display","block");
- $("#page").css({"background-image":"url(css/cc.png)",
+ $("#page").css({"background-image":"url(css/c.png)",
        "background-repeat": "no-repeat",
        "background-attachment": "fixed",
        "background-position": "center",
@@ -102,14 +96,7 @@ counter++;
 //     counter+= 1;
 
 // });
-
-$("#de").click(function(){
- localStorage.setItem('taken_shift', JSON.stringify(b));
-localStorage.setItem('taken_text', JSON.stringify(final));
- 
-});
- 
-
+   
   
 }
 );
@@ -125,7 +112,6 @@ function refresh(){
     $('#shift').val("");
 
 }
-
 
 
 

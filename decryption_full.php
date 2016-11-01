@@ -20,7 +20,7 @@ include_once("includes/header.html");
  	<label for="shift"> 
  		SHIFT:
  	</label> 
- 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number..." max="30">
+ 	<input id="shift" type="number" name="shift" placeholder="Enter some shift as number..." max="25" maxlength="2">
  </p>
  
 <!-- </form>  -->
@@ -33,7 +33,7 @@ include_once("includes/header.html");
 </p>
 <button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
 <p>
-<button id="de" type = "button"  class = "button">DECRYPTION</button>
+<a href="encryption.php"><button id="inc" type = "button"  class = "button">ENCRYPTION</button></a>
 </p>			
 		
 	</div>

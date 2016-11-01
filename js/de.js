@@ -2,7 +2,11 @@ var counter = 0;
 var counter2 = 0;
  var taken_shift = localStorage.getItem('taken_shift');
  var taken_text = localStorage.getItem('taken_text');
- 
+  if (taken_text === null || taken_shift === null) {
+     
+    }else{
+      
+    
 
  var remove  = taken_text.slice(2, -1);
        
@@ -37,10 +41,11 @@ var counter2 = 0;
     //  var new2 = taken_shift + taken2;
     //  var taken_number = parseInt(new2);
     //  // console.log(taken_number);
+ 
      var w = document.getElementById("text").value = remove;
     var q = document.getElementById("shift").value = taken_number2;
     // $("shift").attr("placeholder",taken_number);
-
+}
 $("#btn_go").on("click",function() {
      // $('#final').html('<img src="img/a.gif" />');
 
@@ -63,12 +68,12 @@ counter2 = 0;
     
    counter2 = 1;
     }else if(b.length > 2){
-    $("#final").text("Enter max-shift of [29]");
+    $("#final").text("Enter max-shift of [25]");
     $("#final").css({"display":"block",
                  "color":"#FF0000"});
     counter2 = 4;
-    }else if (b > 29) {
-      $("#final").text("Enter max-shift of [29]");
+    }else if (b > 25) {
+      $("#final").text("Enter max-shift of [25]");
     $("#final").css({"display":"block",
                  "color":"#FF0000"});
     counter2 = 5;
@@ -140,7 +145,7 @@ counter++;
 
 // });
    
-  
+
 }
 );
 function refresh(){
@@ -153,6 +158,10 @@ function refresh(){
     $('#text').val("");
     $('#shift').attr("placeholder", "Enter some shift...");
     $('#shift').val("");
+ 
+   
+        localStorage.removeItem('taken_shift');
+        localStorage.removeItem('taken_text');
 
 }
 

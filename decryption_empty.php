@@ -6,9 +6,9 @@ include_once("includes/header.html");
 
 	<div id="page" class="container">
 		<div class="title">
-			<h2>Encryption</h2>
-			<span class="byline">Enter some text to encrypt, and shift :</span> </div>
-			<p id="ex">Example: How are You today ? | 5 </p>
+			<h2>Decryption</h2>
+			<span class="byline">Enter some text to decrypt, and shift :</span> </div>
+			<p id="ex">Example: Wqe das fgg  ? | 5 </p>
 <!-- 		<p><form id="frm1" action="encryption.php" method="post">
   <p> -->
   	<label for="text">
@@ -28,29 +28,24 @@ include_once("includes/header.html");
   <button id="btn_go" type="button" class="button">Submit</button>
 </span>
 </p>
-
 <p id = "final">
 	
 </p>
 <button type = "button" onclick = "refresh()" class = "button">REFRESH</button>
 <p>
-
-<a href="decryption_full.php"><button id="de" type = "button" class = "button">DECRYPTION THIS</button></a>
+<a href="encryption.php"><button id="inc" type = "button"  class = "button">ENCRYPTION</button></a>
 </p>			
 		
 	</div>
 </div>
-	<script src="js/enc.js"></script>
+	<script src="js/de_empty.js"></script>
 <script>
  $("#page").css({
-       "background-image":"url(css/c.png)",
+       "background-image":"url(css/cc.png)",
        "background-repeat": "no-repeat",
        "background-attachment": "fixed",
        "background-position": "center",
         });
-
-
-
 </script>
 <?php
 include_once("includes/footer.html");
