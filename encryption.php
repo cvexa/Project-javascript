@@ -36,8 +36,18 @@ include_once("includes/header.html");
 <p>
 
 <a href="decryption_full.php"><button id="de" type = "button" class = "button">DECRYPTION THIS</button></a>
-</p>			
-		
+</p>	
+<div class="bonus">	
+
+<b>PROOF : </b><br>
+http://practicalcryptography.com/ciphers/caesar-cipher/	<br>
+<b>Examples : </b>
+<ul>
+  <li>I did a great job !</li>
+  <li>How is the weather todat ? </li>
+  <li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+</ul>
+</div><!--  end of bonus  -->
 	</div>
 </div>
 	<script src="js/enc.js"></script>
@@ -52,6 +62,7 @@ include_once("includes/header.html");
 
 
 </script>
+
 <?php
 include_once("includes/footer.html");
 ?>

@@ -563,3 +563,10 @@
          background-position: center; */
     }
 
+.bonus{
+   margin-top: 10%;
+   color:red;
+	background-color: #fff;	 
+   border:dotted 2px #009E2D ;
+   padding-top: 2%;
+}

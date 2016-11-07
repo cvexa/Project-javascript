@@ -8,6 +8,10 @@ $("#btn_go").on("click",function() {
 counter2 = 0;
 
  var element, element2, convert, result;
+  var max_small = 122;
+  var min_small = 97;
+  var min_big = 65;
+  var max_big = 90;
     
 
 
@@ -44,16 +48,44 @@ counter2 = 0;
     var parseC = parseInt(c);
     // console.log(parseC);
     var parseB = parseInt(b);
-    if (parseC === 32 ||parseC === 33 ||parseC === 63 ||parseC === 64 ||parseC === 44 ||parseC === 46) {
-    convert = parseC;
-    result = String.fromCharCode(convert);
-	final += result;
+    if (parseC === 32 ||parseC === 33 ||parseC === 63 ||parseC === 64 ||parseC === 44 ||parseC === 46 ||parseC === 124) {
+    convert_space = parseC;
+    result_space = String.fromCharCode(convert_space);
+	final += result_space;
+    }else if (parseC >= min_small && parseC <= max_small) {
+      convert = parseC += parseB;
+  
+    // console.log(parseC);
+    if (convert > max_small) {
+
+      var idk = Number(convert) - Number(max_small);
+      var idk2 = Number(min_small) + Number(idk) - 1;
+      var ff = String.fromCharCode(idk2);
+      // console.log(ff);
+      final += ff;
     }else{
-	convert = parseC += parseB;
-	result = String.fromCharCode(convert);
-	final += result;
-	// alert(result);
-	}
+      result = String.fromCharCode(convert);
+  final += result;
+    }
+
+ }else if (parseC >= min_big && parseC <= max_big) {
+ convert2 = parseC += parseB;
+  
+  if (convert2 > max_big) {
+  // final = " ";
+      var idk_big = Number(convert2) - Number(max_big);
+      var idk2_big = Number(min_big) + Number(idk_big) - 1;
+      var ff_big = String.fromCharCode(idk2_big);
+      // console.log(ff_big);
+      final += ff_big;
+    }else{
+      result2 = String.fromCharCode(convert2);
+  final += result2;
+    }
+ }
+
+
+
 }
 }
  // console.log(final);
