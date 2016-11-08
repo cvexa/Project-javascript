@@ -8,7 +8,7 @@ include_once("includes/header.html");
 		<div class="title">
 			<h2>Decryption</h2>
 			<span class="byline">Enter some text to decrypt, and shift :</span> </div>
-			<p id="ex">Example: Wqe das fgg  ? | 5 </p>
+			<p id="ex">Example: s kw ohkwzvo (!) | 10 </p>
 <!-- 		<p><form id="frm1" action="encryption.php" method="post">
   <p> -->
   	<label for="text">

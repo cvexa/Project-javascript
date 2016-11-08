@@ -3,11 +3,14 @@ var counter2 = 0;
 $("#btn_go").on("click",function() {
      // $('#final').html('<img src="img/a.gif" />');
 
-
+counter2 = 0;
+$("#final").text("");
  var max_small = 122;
   var min_small = 97;
   var min_big = 65;
   var max_big = 90;
+  var min_nope = 48;
+  var max_nope = 57;
 
  var element, element2, convert, result;
     
@@ -47,11 +50,12 @@ $("#btn_go").on("click",function() {
     // console.log(parseC);
     var parseB = parseInt(b);
     // console.log(parseB);
-    if (parseC === 32 ||parseC === 33 ||parseC === 63 ||parseC === 64 ||parseC === 44 ||parseC === 46) {
+    if (parseC === 32 ||parseC === 33 ||parseC === 63 ||parseC === 64 ||parseC === 44 ||parseC === 46 || parseC === 40 || parseC === 41||parseC === 124) {
     convert = parseC;
     result = String.fromCharCode(convert);
 	final += result;
-    }else if (parseC >= min_small && parseC <= max_small) {
+    }else if (parseC >= min_small && parseC <= max_small || parseC >= min_big && parseC <= max_big) {
+      if (parseC >= min_small && parseC <= max_small) {
       convert = parseC -= parseB;
    if (convert < min_small) {
    var dif = Number(min_small) - Number(convert);
@@ -85,11 +89,13 @@ result = String.fromCharCode(convert);
 result2 = String.fromCharCode(convert2);
    final += result2;
   }
-
- 
-
-
-  }
+}
+}else{
+       $("#final").text("Enter some valid text[a-z, A-Z/ . , ! ? ()]...");
+    $("#final").css({"display":"block",
+                 "color":"#FF0000"});
+    counter2 = 31;
+    }
 }
 }
  // console.log(final);
