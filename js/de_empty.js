@@ -12,7 +12,8 @@ $("#final").text("");
   var min_nope = 48;
   var max_nope = 57;
 
- var element, element2, convert, result;
+ var element, element2, convert, result, convert_space,convert_space2,
+ result_space,result_space2,result2,convert2;
     
 
 
@@ -91,10 +92,12 @@ result2 = String.fromCharCode(convert2);
   }
 }
 }else{
-       $("#final").text("Enter some valid text[a-z, A-Z/ . , ! ? ()]...");
-    $("#final").css({"display":"block",
-                 "color":"#FF0000"});
-    counter2 = 31;
+       convert_space2 = parseC;
+
+    result_space2 = String.fromCharCode(convert_space2);
+    // console.log(result_space2);
+  final += result_space2;
+    // counter2 = 30;
     }
 }
 }

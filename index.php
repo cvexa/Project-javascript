@@ -33,7 +33,7 @@ $("#logo").mouseout(function start_flash2() {
     if (target.length) {
       $('html, body').animate({
         scrollTop: target.offset().top
-      }, 1000);
+      }, 2000);
       return false;
     }
   }
@@ -71,9 +71,11 @@ $("#logo").mouseout(function start_flash2() {
 				</div>
 			</div>
 		</div>
-	<!-- 	<ul class="actions"> -->
-			<!-- <li> --><a id="about_btn" href="https://en.wikipedia.org/wiki/Caesar_cipher" class="button">Read More</a><!-- </li>
- -->	<!-- 	</ul> -->
+
+			<a id="about_btn" href="https://en.wikipedia.org/wiki/Caesar_cipher" class="button">Read More</a>
+			
+
+
 	</div>
 	<div id="featured">
 		<div class="container">

@@ -8,7 +8,8 @@ $("#btn_go").on("click",function() {
 counter2 = 0;
 var final = " ";
 $("#final").text("");
- var element, element2, convert, result;
+ var element, element2, convert, result, convert_space,convert_space2,
+ result_space,result_space2;
   var max_small = 122;
   var min_small = 97;
   var min_big = 65;
@@ -56,11 +57,6 @@ $("#final").text("");
     convert_space = parseC;
     result_space = String.fromCharCode(convert_space);
 	final += result_space;
-    }else if (parseC >= min_nope && parseC <= max_nope) {
-      $("#final").text("Enter some valid text[a-z, A-Z/ . , ! ? ()]...");
-    $("#final").css({"display":"block",
-                 "color":"#FF0000"});
-    counter2 = 30;
     }else if (parseC >= min_small && parseC <= max_small || parseC >= min_big && parseC <= max_big) {
        if (parseC >= min_small && parseC <= max_small) {
       convert = parseC += parseB;
@@ -94,10 +90,13 @@ $("#final").text("");
     }
  }
     }else{
-       $("#final").text("Enter some valid text[a-z, A-Z/ . , ! ? ()]...");
-    $("#final").css({"display":"block",
-                 "color":"#FF0000"});
-    counter2 = 31;
+     
+     convert_space2 = parseC;
+
+    result_space2 = String.fromCharCode(convert_space2);
+    // console.log(result_space2);
+  final += result_space2;
+    // counter2 = 30;
     }
 
    
